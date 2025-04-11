@@ -1,0 +1,23 @@
+
+// styles/variables.scss
+$bg-dark: #121212;
+$bg-dark-secondary: #1e1e1e;
+$primary: #64ffda;
+$secondary: #8892b0;
+$text: #e6f1ff;
+$text-secondary: #a8b2d1;
+$white: #ffffff;
+$black: #000000;
+$gray: #333333;
+$gradient-primary: linear-gradient(90deg, #64ffda 0%, #64d0ff 100%);
+
+$font-primary: 'Inter', sans-serif;
+$font-secondary: 'Space Grotesk', sans-serif;
+
+$box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+$transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-laptop: 1024px;
+$bp-desktop: 1200px;

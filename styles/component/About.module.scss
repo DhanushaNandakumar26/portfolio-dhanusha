@@ -1,0 +1,192 @@
+
+// styles/components/About.module.scss
+@use "../variables" as *;
+
+.about {
+  background-color: rgba($bg-dark-secondary, 0.3);
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: $gradient-primary;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  
+  @media (max-width: $bp-tablet) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.text {
+  flex: 1;
+  
+  p {
+    color: $text-secondary;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+  }
+}
+
+.imageContainer {
+  flex-shrink: 0;
+  
+  @media (max-width: $bp-tablet) {
+    order: -1;
+  }
+}
+
+// .imageWrapper {
+//   position: relative;
+//   width: 300px;
+//   height: 350px;
+//   border-radius: 10px;
+//   overflow: hidden;
+//   box-shadow: $box-shadow;
+  
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     border: 2px solid $primary;
+//     border-radius: 10px;
+//     z-index: 1;
+//     transform: translate(15px, 15px);
+//     transition: $transition;
+//   }
+  
+//   &:hover::before {
+//     transform: translate(10px, 10px);
+//   }
+// }
+.imageWrapper {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  overflow: visible; // Changed from hidden to visible
+  box-shadow: $box-shadow;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -15px; // Moved up (negative value)
+    left: -15px; // Moved left (negative value)
+    width: 100%;
+    height: 100%;
+    border: 2px solid $primary;
+    border-radius: 10px;
+    z-index: -1; // Behind the image
+    transition: $transition;
+  }
+  
+  &:hover::before {
+    top: -10px; // Smaller offset on hover
+    left: -10px; // Smaller offset on hover
+  }
+}
+
+.profileImage {
+  object-fit: cover;
+  border-radius: 10px; // Adding border radius to the image itself
+}
+.experience {
+  h3 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    background-color: $gray;
+    
+    @media (max-width: $bp-mobile) {
+      left: 20px;
+    }
+  }
+}
+
+.timelineItem {
+  margin-bottom: 2.5rem;
+  position: relative;
+  padding-left: 2rem;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: $bp-mobile) {
+    padding-left: 50px;
+  }
+}
+
+.timelineContent {
+  background-color: rgba($bg-dark-secondary, 0.5);
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: $box-shadow;
+  border-left: 3px solid $primary;
+  transition: $transition;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+  
+  h4 {
+    color: $white;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.company {
+  color: $primary;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.duration {
+  color: $text-secondary;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.responsibilities {
+  margin-left: 1.5rem;
+  
+  li {
+    margin-bottom: 0.5rem;
+    color: $text-secondary;
+  }
+}

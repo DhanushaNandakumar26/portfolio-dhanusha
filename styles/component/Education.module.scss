@@ -1,0 +1,129 @@
+
+// styles/components/Education.module.scss
+@use "../variables" as *;
+
+.education {
+  background-color: $bg-dark;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  
+  &::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: $gradient-primary;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+  }
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: $secondary;
+    
+    @media (max-width: $bp-tablet) {
+      left: 20px;
+    }
+  }
+}
+
+.timelineItem {
+  position: relative;
+  padding: 1.5rem;
+  background-color: $bg-dark-secondary;
+  border-radius: 8px;
+  box-shadow: $box-shadow;
+  width: calc(50% - 30px);
+  margin-bottom: 2rem;
+  
+  &:nth-child(odd) {
+    margin-left: auto;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: -10px;
+      width: 20px;
+      height: 20px;
+      background-color: $primary;
+      border-radius: 50%;
+      transform: translateX(-50%);
+    }
+    
+    @media (max-width: $bp-tablet) {
+      margin-left: 40px;
+      width: calc(100% - 60px);
+      
+      &::before {
+        left: -40px;
+      }
+    }
+  }
+  
+  &:nth-child(even) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      right: -10px;
+      width: 20px;
+      height: 20px;
+      background-color: $primary;
+      border-radius: 50%;
+      transform: translateX(50%);
+    }
+    
+    @media (max-width: $bp-tablet) {
+      margin-left: 40px;
+      width: calc(100% - 60px);
+      
+      &::before {
+        left: -40px;
+        right: auto;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+.timelineContent {
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.institution, .duration {
+  font-size: 0.9rem;
+  color: $text-secondary;
+}
+
+.institution {
+  margin-bottom: 0.25rem;
+}
+
+.duration {
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: $text-secondary;
+}

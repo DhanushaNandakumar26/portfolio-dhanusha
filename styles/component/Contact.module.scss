@@ -1,0 +1,135 @@
+
+// styles/components/Contact.module.scss
+@use "../variables" as *;
+
+.contact {
+  background-color: $bg-dark-secondary;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  
+  &::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: $gradient-primary;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+  }
+}
+
+.content {
+  display: flex;
+  gap: 4rem;
+  
+  @media (max-width: $bp-tablet) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.info {
+  flex: 1;
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  p {
+    margin-bottom: 2rem;
+    color: $text-secondary;
+  }
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+  svg {
+    color: $primary;
+    min-width: 24px;
+  }
+  
+  a, span {
+    color: $text;
+    transition: $transition;
+  }
+  
+  a:hover {
+    color: $primary;
+  }
+}
+
+.formContainer {
+  flex: 1;
+}
+
+.form {
+  background-color: $bg-dark;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: $box-shadow;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: $bg-dark-secondary;
+    border: 1px solid $gray;
+    border-radius: 4px;
+    color: $text;
+    font-family: $font-primary;
+    resize: vertical;
+    transition: $transition;
+    
+    &:focus {
+      outline: none;
+      border-color: $primary;
+    }
+  }
+}
+
+.submitStatus {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-weight: 500;
+  
+  &.success {
+    background-color: rgba(39, 174, 96, 0.1);
+    color: #27ae60;
+  }
+  
+  &.error {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+  }
+}
+
+.infoItem{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }

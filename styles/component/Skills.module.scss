@@ -1,0 +1,73 @@
+// styles/component/Skills.module.scss
+@use "../variables" as *;
+.skills {
+  background-color: $bg-dark-secondary;
+  padding: 4rem 0;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: $text;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: $gradient-primary; // Greenish gradient
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+  }
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.skillCategory {
+  h3 {
+    font-size: 1.5rem;
+    color: $primary; // Greenish accent
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.skillGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.skillCard {
+  background-color: $bg-dark;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  color: $text;
+  font-size: 0.95rem;
+  border: 1px solid rgba($primary, 0.2);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: $primary; // Greenish border on hover
+    box-shadow: 0 4px 15px rgba($primary, 0.2);
+  }
+
+  span {
+    display: block;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: $bp-tablet) {
+  .skillGrid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}

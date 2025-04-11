@@ -1,0 +1,21 @@
+@use "../variables" as *;
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLink {
+  color: $text-secondary;
+  transition: $transition;
+  
+  &:hover {
+    color: $primary;
+    transform: translateY(-5px);
+  }
+  
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}

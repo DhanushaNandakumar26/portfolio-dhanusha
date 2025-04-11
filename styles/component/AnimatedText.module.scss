@@ -1,0 +1,12 @@
+// styles/components/AnimatedText.module.scss
+@use "../variables" as *;
+
+.animatedText {
+  display: inline-flex;
+  flex-wrap: wrap;
+  
+  span {
+    display: inline-block;
+    margin-right: 2px;
+  }
+}

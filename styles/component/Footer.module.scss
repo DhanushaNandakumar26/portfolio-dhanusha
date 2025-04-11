@@ -1,0 +1,33 @@
+
+// styles/components/Footer.module.scss
+@use "../variables" as *;
+
+.footer {
+  background-color: $bg-dark;
+  padding: 3rem 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo {
+  font-family: $font-secondary;
+  font-size: 2rem;
+  font-weight: 700;
+  color: $primary;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright {
+  color: $text-secondary;
+  font-size: 0.9rem;
+  text-align: center;
+}
