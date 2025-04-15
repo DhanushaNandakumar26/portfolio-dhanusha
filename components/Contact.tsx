@@ -101,7 +101,7 @@ const Contact = () => {
             </div>
           </motion.div>
           
-          <motion.div
+          {/* <motion.div
             variants={slideInRight}
             initial="initial"
             whileInView="animate"
@@ -166,7 +166,7 @@ const Contact = () => {
                 </motion.div>
               )}
             </form>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>
