@@ -4,7 +4,7 @@ export const personalInfo = {
     name: "Dhanusha Nandakumar",
     title: "Software Engineer",
     email: "dhanudhanusha99@gmail.com",
-    phone: "+1 8129943194",
+    phone: "+91 8129943194",
     location: "Kochi, Kerala",
     bio: "Software engineer with 2.8 years of experience specializing in React.js, Next.js, and Node.js. Passionate about building performant and user-friendly web applications with clean code practices.",
     about: `I'm a software engineer with nearly 3 years of professional experience in web development. 
