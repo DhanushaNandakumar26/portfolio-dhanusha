@@ -8,6 +8,7 @@ import Skills from '@/components/Skills';
 import Education from '@/components/Education';
 import Contact from '@/components/Contact';
 import { motion } from 'framer-motion';
+import Head from 'next/head';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       initial="initial"
       animate="animate"
     >
+
       <Hero />
       <About />
       <Projects />
