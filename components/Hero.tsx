@@ -49,7 +49,7 @@ const Hero = () => {
         >
           <div className={styles.imageWrapper}>
             <Image
-              src="/dhanusha.jpg"
+              src="./dhanusha.jpg"
               alt={personalInfo.name}
               fill
               style={{ objectFit: 'cover' }}

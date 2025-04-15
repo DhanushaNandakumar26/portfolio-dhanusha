@@ -43,7 +43,7 @@ const About = () => {
           >
             <div className={styles.imageWrapper}>
               <Image
-                src="/dhanusha2.jpg"
+                src="./dhanusha2.jpg"
                 alt={personalInfo.name}
                 fill
                 style={{ objectFit: 'cover' }}
