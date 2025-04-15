@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Dhanusha Nandakumar | Software Engineer',
-  description: 'Portfolio of John Doe, a software engineer with expertise in React.js, Next.js, and Node.js',
+  description: 'Portfolio of Dhanusha Nandakumar, a software engineer with expertise in React.js, Next.js, and Node.js',
 };
 
 export default function RootLayout({
