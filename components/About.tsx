@@ -31,7 +31,7 @@ const About = () => {
             className={styles.text}
           >
             <p>{personalInfo.about}</p>
-            <p>Over the past 2.8 years, I've had the opportunity to work on various projects that have helped me grow professionally and technically. My focus has been on creating intuitive, responsive, and performance-optimized web applications.</p>
+            <p>Over the past 3 years, I've had the opportunity to work on various projects that have helped me grow professionally and technically. My focus has been on creating intuitive, responsive, and performance-optimized web applications.</p>
           </motion.div>
           
           <motion.div 

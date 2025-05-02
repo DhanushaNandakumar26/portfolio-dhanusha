@@ -31,7 +31,7 @@ const Footer = () => {
             
             <div className={styles.footerLinks}>
               <h4>Quick Links</h4>
-              <nav>
+              <nav className={styles.footerLinksItems}>
                 <Link href="#home">Home</Link>
                 <Link href="#about">About</Link>
                 <Link href="#projects">Projects</Link>

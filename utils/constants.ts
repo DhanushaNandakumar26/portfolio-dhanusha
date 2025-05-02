@@ -6,8 +6,8 @@ export const personalInfo = {
     email: "dhanudhanusha99@gmail.com",
     phone: "+91 8129943194",
     location: "Kochi, Kerala",
-    bio: "Software engineer with 2.8 years of experience specializing in React.js, Next.js, and Node.js. Passionate about building performant and user-friendly web applications with clean code practices.",
-    about: `I'm a software engineer with nearly 3 years of professional experience in web development. 
+    bio: "Software engineer with 3 years of experience specializing in React.js, Next.js, and Node.js. Passionate about building performant and user-friendly web applications with clean code practices.",
+    about: `I'm a software engineer with 3 years of professional experience in web development. 
             My expertise lies in building responsive and interactive web applications using React.js, Next.js, and Node.js.
             I enjoy solving complex problems and creating intuitive user experiences. My approach to development
             focuses on writing clean, maintainable code that delivers exceptional performance.`,
