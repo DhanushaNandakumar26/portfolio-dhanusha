@@ -1,49 +1,49 @@
 
 // utils/constants.ts
 export const personalInfo = {
-    name: "Dhanusha Nandakumar",
-    title: "Software Engineer",
-    email: "dhanudhanusha99@gmail.com",
-    phone: "+91 8129943194",
-    location: "Kochi, Kerala",
-    bio: "Software engineer with 3 years of experience specializing in React.js, Next.js, and Node.js. Passionate about building performant and user-friendly web applications with clean code practices.",
-    about: `I'm a software engineer with 3 years of professional experience in web development. 
+  name: "Dhanusha Nandakumar",
+  title: "Software Engineer",
+  email: "dhanudhanusha99@gmail.com",
+  phone: "+91 8129943194",
+  location: "Kochi, Kerala",
+  bio: "Software engineer with 3 years of experience specializing in React.js, Next.js, and Node.js. Passionate about building performant and user-friendly web applications with clean code practices.",
+  about: `I'm a software engineer with 3 years of professional experience in web development. 
             My expertise lies in building responsive and interactive web applications using React.js, Next.js, and Node.js.
             I enjoy solving complex problems and creating intuitive user experiences. My approach to development
             focuses on writing clean, maintainable code that delivers exceptional performance.`,
-    resumeLink: "/resume.pdf",
-  };
-  
-  export const socialLinks = [
-    {
-      name: "GitHub",
-      url: "https://github.com/DhanushaNandakumar26",
-      icon: "github",
-    },
-    {
-      name: "LinkedIn",
-      url: "https://www.linkedin.com/in/dhanusha-nandakumar/",
-      icon: "linkedin",
-    },
-    {
-      name: "Twitter",
-      url: "https://x.com/Dhanusha_Dhanu_",
-      icon: "twitter",
-    },
-    {
-      name: "Medium",
-      url: "https://medium.com/@dhanudhanusha99",
-      icon: "medium",
-    },
-  ];
-  
+  resumeLink: "/resume.pdf",
+};
+
+export const socialLinks = [
+  {
+    name: "GitHub",
+    url: "https://github.com/DhanushaNandakumar26",
+    icon: "github",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/dhanusha-nandakumar/",
+    icon: "linkedin",
+  },
+  {
+    name: "Twitter",
+    url: "https://x.com/Dhanusha_Dhanu_",
+    icon: "twitter",
+  },
+  {
+    name: "Medium",
+    url: "https://medium.com/@dhanudhanusha99",
+    icon: "medium",
+  },
+];
+
 // utils/constants.js
 export const projects = [
   {
     id: 1,
     title: "Cloud Service Automation Platform",
     description: "A centralized dashboard providing comprehensive oversight of AWS resources with real-time monitoring of usage, performance metrics, and cost analytics. Features an intuitive interface that simplifies resource management and enhances operational visibility across the organization.",
-    technologies: ["React", "TypeScript", "Node.js", "MySQL", "AWS", "Material UI", "Joy UI", "React Query", "GitLab" ],
+    technologies: ["React", "TypeScript", "Node.js", "MySQL", "AWS", "Material UI", "Joy UI", "React Query", "GitLab"],
     featured: true,
   },
   {
@@ -89,14 +89,23 @@ export const projects = [
     featured: false,
   },
   {
-    id: 8,
-    title: "Portfolio Showcase Solution",
-    description: "A portfolio platform developed for a client to effectively showcase professional work, skills, and achievements. The fully responsive design delivers an excellent user experience across all devices with optimized performance and enhanced visual presentation.",
-    technologies: ["React", "CSS", "JavaScript", "Responsive Design", "Performance Optimization"],
-    featured: false,
+    id: 9,
+    title: "Portfolio Website",
+    description: "A responsive portfolio website developed for a client using React and Framer Motion. The site elegantly presents professional work and skills with smooth animations and a clean user interface, hosted on GitHub Pages.",
+    technologies: ["React", "Framer Motion", "CSS", "GitHub Pages"],
+    linkURL: "https://vyydesigns.com/", // Replace with actual URL
+    featured: true,
+  },
+  {
+    id: 10,
+    title: "Business Website",
+    description: "A business website created using Next.js, Framer Motion, and CSS, designed for a local service provider. It features dynamic animations, SEO optimization, and fast performance, hosted on Vercel.",
+    technologies: ["Next.js", "Framer Motion", "CSS", "Vercel"],
+    linkURL: "https://www.tattoonist.in/", // Replace with actual URL
+    featured: true,
   }
 ];
-  
+
 export const education = [
   {
     id: 1,
@@ -115,76 +124,77 @@ export const education = [
     description: "Developed a strong foundation in computer science, programming, and application development through a comprehensive undergraduate curriculum.",
   },
 ];
-  
-  export const skills = {
-    technical: [
-      { name: "JavaScript" },
-      { name: "TypeScript" },
-      { name: "React.js" },
-      { name: "Next.js" },
-      { name: "Node.js" },
-      { name: "Express.js" },
-      { name: "MySQL" },           // Common relational DB alongside SQL
-      { name: "MongoDB" },
-      { name: "SQL" },
-      { name: "HTML5/CSS3" },
-      { name: "SCSS/Sass" },
-      { name: "RESTful APIs" },
-      { name: "Git/GitHub" },
-      { name: "Redux" },           // Common in React projects
-      { name: "Bootstrap" },   
-      { name: "Tailwind CSS" },
-      { name: "Material UI"}   
-    ],
-    soft: [
-      "Problem Solving",
-      "Team Collaboration",
-      "Communication",
-      "Time Management",
-      "Adaptability",
-      "Critical Thinking",
-    ],
-    tools: [
-      "VS Code",
-      "Postman",
-      "Figma",
-      "AWS",
-      "JIRA",
-      "Bitbucket",
-      "Gitlab",
-      "NPM/Yarn",
-      "DBeaver",
-    ],
-  };
-  
-  export const experiences = [
-    {
-      id: 1,
-      position: "Software Engineer",
-      company: "Pumex Infotech Pvt. Ltd.",
-      location: "Kakkanad, Ernakulam",
-      duration: "July 2022 - Present",
-      responsibilities: [
-        "Developed and maintained responsive web applications using React.js and Next.js",
-        "Implemented state management solutions using Redux and Context API",
-        "Collaborated with design and backend teams to deliver high-quality, performant features",
-        "Optimized application performance and ensured cross-browser compatibility",
-        "Participated in code reviews and mentored junior developers",
-        "Built and maintained client websites and web applications",
 
-      ],
-    },
-    {
-      id: 2,
-      position: "Software Engineer Intern",
-      company: "Pumex Infotech Pvt. Ltd.",
-      location: "Kakkanad, Ernakulam",
-      duration: "April 2022 - July 2022",
-      responsibilities: [
-        "Implemented responsive designs using HTML, CSS, and JavaScript",
-        "Developed frontend components with React.js",
-        "Created RESTful API endpoints with Node.js and Express",
-        "Participated in agile development processes",
-      ],
-    },
-  ];
+export const skills = {
+  technical: [
+    { name: "JavaScript" },
+    { name: "TypeScript" },
+    { name: "React.js" },
+    { name: "Next.js" },
+    { name: "Node.js" },
+    { name: "Express.js" },
+    { name: "MySQL" },           // Common relational DB alongside SQL
+    { name: "MongoDB" },
+    { name: "SQL" },
+    { name: "GraphQL" },
+    { name: "HTML5/CSS3" },
+    { name: "SCSS/Sass" },
+    { name: "RESTful APIs" },
+    { name: "Git/GitHub" },
+    { name: "Redux" },           // Common in React projects
+    { name: "Bootstrap" },
+    { name: "Tailwind CSS" },
+    { name: "Material UI" }
+  ],
+  soft: [
+    "Problem Solving",
+    "Team Collaboration",
+    "Communication",
+    "Time Management",
+    "Adaptability",
+    "Critical Thinking",
+  ],
+  tools: [
+    "VS Code",
+    "Postman",
+    "Figma",
+    "AWS",
+    "JIRA",
+    "Bitbucket",
+    "Gitlab",
+    "NPM/Yarn",
+    "DBeaver",
+  ],
+};
+
+export const experiences = [
+  {
+    id: 1,
+    position: "Software Engineer",
+    company: "Pumex Infotech Pvt. Ltd.",
+    location: "Kakkanad, Ernakulam",
+    duration: "July 2022 - Present",
+    responsibilities: [
+      "Developed and maintained responsive web applications using React.js and Next.js",
+      "Implemented state management solutions using Redux and Context API",
+      "Collaborated with design and backend teams to deliver high-quality, performant features",
+      "Optimized application performance and ensured cross-browser compatibility",
+      "Participated in code reviews and mentored junior developers",
+      "Built and maintained client websites and web applications",
+
+    ],
+  },
+  {
+    id: 2,
+    position: "Software Engineer Intern",
+    company: "Pumex Infotech Pvt. Ltd.",
+    location: "Kakkanad, Ernakulam",
+    duration: "April 2022 - July 2022",
+    responsibilities: [
+      "Implemented responsive designs using HTML, CSS, and JavaScript",
+      "Developed frontend components with React.js",
+      "Created RESTful API endpoints with Node.js and Express",
+      "Participated in agile development processes",
+    ],
+  },
+];
