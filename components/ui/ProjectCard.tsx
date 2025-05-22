@@ -31,7 +31,11 @@ const ProjectCard = ({ project }: ProjectProps) => {
           <h3>{project.title}</h3>
         </div>
         <p>{project.description}</p>
-
+        {project.linkURL && (
+          <span>
+            Please find my work: <Link href={project.linkURL} target="_blank" rel="noopener noreferrer">Website</Link>
+          </span>
+        )}
 
         <div className={styles.technologies}>
           {project.technologies.map((tech, index) => (
@@ -40,11 +44,7 @@ const ProjectCard = ({ project }: ProjectProps) => {
             </span>
           ))}
         </div>
-        {project.linkURL && (
-          <span>
-            Please find my work: <Link href={project.linkURL} target="_blank" rel="noopener noreferrer">Website</Link>
-          </span>
-        )}
+
         <div className={styles.projectType}>
           <FiCpu size={14} />
           <span>{project.id <= 5 ? 'Professional Project' : (project.id === 8 ? 'Freelance Work' : 'Academic Project')}</span>
