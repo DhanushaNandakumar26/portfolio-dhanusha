@@ -72,7 +72,7 @@ export const projects = [
     title: "Utility Management & Payment Platform",
     description: "A full-stack application that revolutionizes utility management for residential complexes.A web-based application developed in React js as front end and Node and mySQL as backend. This project mainly aims to support apartments for their utility management and bill payment. Users can manage utility bills like electricity, water, Maintenance etc. ",
     technologies: ["React.js", "Node.js", "MySQL", "REST API", "ORM", "JavaScript", "Postman", "Git", "Chrome DevTools"],
-    featured: true,
+    featured: false,
   },
   {
     id: 6,
@@ -94,7 +94,7 @@ export const projects = [
     description: "A responsive portfolio website developed for a client using React and Framer Motion. The site elegantly presents professional work and skills with smooth animations and a clean user interface, hosted on GitHub Pages.",
     technologies: ["React", "Framer Motion", "CSS", "GitHub Pages"],
     linkURL: "https://vyydesigns.com/", // Replace with actual URL
-    featured: true,
+    featured: false,
   },
   {
     id: 10,
@@ -102,7 +102,7 @@ export const projects = [
     description: "A business website created using Next.js, Framer Motion, and CSS, designed for a local service provider. It features dynamic animations, SEO optimization, and fast performance, hosted on Vercel.",
     technologies: ["Next.js", "Framer Motion", "CSS", "Vercel"],
     linkURL: "https://www.tattoonist.in/", // Replace with actual URL
-    featured: true,
+    featured: false,
   }
 ];
 
